@@ -1,0 +1,53 @@
+length=130;
+width=90;
+side_width=30;
+thickness=2;
+
+difference(){
+    cube([length,width,thickness]);
+    translate([10,10,0]){
+    cylinder(h=2,d=2.5);
+    }
+    translate([60,10,0]){
+        cylinder(h=2,d=2.5);
+    }
+    translate([10,69,0]){
+        cylinder(h=2,d=2.5);
+    }
+    translate([60,69,0]){
+        cylinder(h=2,d=2.5);
+    }
+    
+}
+
+difference(){
+    translate([90,0,0]){
+        cube([10,2,30]);
+    }
+    translate([95,0,5]){
+    rotate([90,0,0]){
+        cylinder(h=3,d=2.5);
+    }
+}   
+    translate([95,0,23]){
+    rotate([90,0,0]){
+        cylinder(h=3,d=2.5);
+    }
+}
+}
+
+difference(){
+    translate([90,87,0]){
+        cube([10,2,30]);
+    }
+    translate([95,87,5]){
+    rotate([90,0,0]){
+        cylinder(h=3,d=2.5);
+    }
+}
+    translate([95,87,23]){
+    rotate([90,0,0]){
+        cylinder(h=3,d=2.5);
+    }
+}
+}
